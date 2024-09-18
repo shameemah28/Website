@@ -65,59 +65,43 @@ body {
 /* Media query for responsiveness */
 @media (max-width: 768px) {
     .navbar {
-        flex-direction: column; /* Stack navbar items vertically */
-        align-items: flex-start; /* Align items to the start for mobile */
+        flex-direction: row; /* Keep items in a row */
+        align-items: center; /* Center items */
     }
     
     .navbar img {
-        margin: 0 0 10px 0; /* Adjust margin for mobile */
+        margin: 0 10px; /* Adjust margin */
     }
 
     .navbar .nav-links {
-        flex-direction: column; /* Stack nav links vertically */
-        width: 100%; /* Full width for mobile */
-        padding: 0; /* Remove padding for better alignment */
+        flex-direction: row; /* Keep nav links horizontal */
+        width: auto; /* Auto width */
+        padding: 0; /* Remove padding */
     }
 
     .navbar a {
-        padding: 10px; /* Adjust padding for mobile */
-        text-align: left; /* Align text to the left */
-        width: 100%; /* Full width for mobile links */
+        padding: 10px; /* Adjust padding */
+        text-align: center; /* Align text */
         box-sizing: border-box; /* Include padding in width */
     }
-}
 
-/* Content styles */
-.container {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 20px;
-}
-
-.container img {
-    width: 40%; /* Adjust for desktop */
-    height: auto; /* Maintain aspect ratio */
-}
-
-@media (max-width: 768px) {
+    /* Content styles */
     .container {
-        flex-direction: column; /* Stack image and text */
-        align-items: center; /* Center align for mobile */
+        display: flex;
+        flex-direction: row; /* Keep image and text in a row */
+        justify-content: space-between;
+        align-items: center; /* Align items center */
+        padding: 20px;
     }
 
     .container img {
-        width: 80%; /* Make image larger on mobile */
-        margin-bottom: 20px; /* Space between text and image */
+        width: 40%; /* Maintain desktop size */
+        height: auto; /* Maintain aspect ratio */
+        margin-left: 20px; /* Space between text and image */
     }
 
-    .container h1 {
-        text-align: center; /* Center heading */
-        font-size: 24px; /* Adjust font size */
-    }
-
-    .container p {
-        text-align: center; /* Center text */
+    .container h1, .container p {
+        text-align: left; /* Align text to left for readability */
         padding: 0 10px; /* Add padding */
         font-size: 16px; /* Adjust font size */
     }
