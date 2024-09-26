@@ -1,0 +1,114 @@
+/* Global Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    /* background-color: #D8BFD8; Uncomment to use */
+}
+
+/* Navbar Styles */
+.navbar {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #333;
+    padding: 10px;
+    position: relative;
+}
+
+.navbar img {
+    height: 50px;
+    margin-right: 20px;
+}
+
+.navbar .nav-links {
+    display: flex;
+    gap: 10px; /* Space between links */
+    position: relative;
+}
+
+.navbar a {
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 20px;
+    text-decoration: none;
+    transition: background-color 0.3s; /* Smooth transition for hover */
+}
+
+.navbar a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+/* Dropdown Menu Styles */
+.dropdown {
+    display: none; /* Initially hidden */
+    position: absolute;
+    background-color: #333; /* Match navbar color */
+    min-width: 160px;
+    z-index: 1;
+    top: 100%; /* Position below the link */
+    left: 0; /* Align with the link */
+    margin-top: 10px; /* Space between link and dropdown */
+}
+
+.dropdown li {
+    list-style: none; /* Remove bullets */
+}
+
+.dropdown li a {
+    color: #f2f2f2; /* Dropdown link color */
+    padding: 10px 20px; /* Padding for dropdown items */
+    text-decoration: none; /* Remove underline */
+    display: block; /* Ensure links take full width */
+}
+
+.dropdown li a:hover {
+    background-color: #ddd; /* Background color on hover */
+}
+
+/* Responsive Styles */
+@media (max-width: 600px) {
+    .navbar {
+        flex-direction: row; /* Keep items in a row */
+        align-items: center; /* Center items */
+    }
+    
+    .navbar img {
+        margin: 0 10px; /* Adjust margin */
+    }
+
+    .navbar .nav-links {
+        flex-direction: row; /* Keep nav links horizontal */
+        width: auto; /* Auto width */
+        padding: 0; /* Remove padding */
+    }
+
+    .navbar a {
+        padding: 10px; /* Adjust padding */
+        text-align: center; /* Align text */
+        box-sizing: border-box; /* Include padding in width */
+    }
+
+    /* Content styles */
+    .container {
+        display: flex;
+        flex-direction: row; /* Keep image and text in a row */
+        justify-content: space-between;
+        align-items: center; /* Align items center */
+        padding: 20px;
+    }
+
+    .container img {
+        width: 40%; /* Maintain desktop size */
+        height: auto; /* Maintain aspect ratio */
+        margin-left: 20px; /* Space between text and image */
+    }
+
+    .container h1,
+    .container p {
+        text-align: left; /* Align text to left for readability */
+        padding: 0 10px; /* Add padding */
+        font-size: 16px; /* Adjust font size */
+    }
+}

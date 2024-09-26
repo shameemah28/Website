@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Light Blue and Purple Lively Background</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            overflow: hidden;
+            height: 100vh;
+            position: relative;
+            background: linear-gradient(135deg, #a0c4ff, #d5c6e0);
+            animation: gradientAnimation 15s ease infinite;
+        }
+
+        @keyframes gradientAnimation {
+            0% { background-position: 0% 50%; }
+            50% { background-position: 100% 50%; }
+            100% { background-position: 0% 50%; }
+        }
+
+        .particle {
+            position: absolute;
+            border-radius: 50%;
+            opacity: 0.6;
+            animation: float 6s infinite;
+        }
+
+        @keyframes float {
+            0% {
+                transform: translateY(0) scale(1);
+            }
+            50% {
+                transform: translateY(-20px) scale(1.1);
+            }
+            100% {
+                transform: translateY(0) scale(1);
+            }
+        }
+
+        /* Particle styles */
+        .particle1 {
+            width: 10px;
+            height: 10px;
+            background-color: rgba(255, 255, 255, 0.8);
+            left: 20%;
+            animation-duration: 4s;
+            animation-delay: 0s;
+        }
+
+        .particle2 {
+            width: 15px;
+            height: 15px;
+            background-color: rgba(255, 255, 255, 0.8);
+            left: 50%;
+            animation-duration: 5s;
+            animation-delay: 1s;
+        }
+
+        .particle3 {
+            width: 20px;
+            height: 20px;
+            background-color: rgba(255, 255, 255, 0.8);
+            left: 80%;
+            animation-duration: 6s;
+            animation-delay: 2s;
+        }
+
+        .particle4 {
+            width: 25px;
+            height: 25px;
+            background-color: rgba(255, 255, 255, 0.8);
+            left: 50%;
+            animation-duration: 5.5s;
+            animation-delay: 3s;
+        }
+
+        .particle5 {
+            width: 30px;
+            height: 30px;
+            background-color: rgba(255, 255, 255, 0.8);
+           left: 50%;
+            top: 40%;
+            animation-duration: 4.5s;
+            animation-delay: 1.5s;
+        }
+		
+		.particle6 {
+            width: 20px;
+            height: 20px;
+            background-color: rgba(255, 255, 255, 0.8);
+            left: 50%;
+            top: 50%;
+            transform: translate(-50%, -50%);
+            animation-duration: 5s;
+            animation-delay: 1s;
+        }
+
+
+        .content {
+            position: relative;
+            z-index: 1;
+            text-align: center;
+            margin-top: 20%;
+            color: #333;
+        }
+    </style>
+</head>
+<body>
+    <div class="background">
+        <div class="particle particle1"></div>
+        <div class="particle particle2"></div>
+        <div class="particle particle3"></div>
+        <div class="particle particle4"></div>
+        <div class="particle particle5"></div>
+		 <div class="particle particle6"></div>
+    </div>
+   </body>
+</html>
