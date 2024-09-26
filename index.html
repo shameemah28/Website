@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HomePage</title>
+    <link rel="stylesheet" href="styles.css" >
+	<style>
+iframe {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            border: none; /* Remove default border */
+            z-index: -1; /* Send it to the back */
+        }
+		
+		 .handwritten {
+            font-size: 20px;
+            font-weight: bold; /* Makes the text appear bolder */
+            letter-spacing: 1px; /* Adds spacing for a cleaner look */
+        }
+		</style>
+</head>
+<body>
+<iframe src="background.html"></iframe>
+<br>
+<div class="navbar">
+    <div class="nav-links">
+        <a href="index.html">Home</a>
+		<a href="#" id="teamLink">Team</a>
+        <ul class="dropdown" id="teamDropdown">
+            <li><a href="#">CYRUS</a></li>
+            <li><a href="#">FIN404</a></li>
+            <li><a href="#">FINTECHNOVATIES</a></li>
+		    <li><a href="#">Finthusiasts</a></li>
+            <li><a href="#">The FinSphere</a></li>
+       
+        </ul>
+        <a href="about.html">About Schedule</a>
+        <a href="speakers.html">Speakers</a>
+        <a href="registration.html">Registration</a>
+		
+        <a href="#" id="contactLink">Contact</a>
+        <ul class="dropdown" id="contactDropdown">			
+            <li><a href="https://www.instagram.com">Instagram</a></li>
+            <li><a href="https://www.facebook.com">Facebook</a></li>
+            <li><a href="https://www.twitter.com">Twitter</a></li>
+            <li><a href="https://www.linkedin.com">LinkedIn</a></li>
+        </ul>
+  				
+        
+        
+    </div>
+</div>
+<div style="display: flex; justify-content: space-between; align-items: center; padding: 20px;">
+    <div style="flex: 1; text-align: left;">
+        <h1 style="flex: 1; text-align: center;">FLAGSHIP EVENT</h1>
+		<div class="handwritten">
+		<p>Our vision is to establish a pioneering Shark Tank-inspired flagship event
+where the brightest young minds consisting of university students and
+SMEs come together to design transformative business plans and
+strategies for the future of banking and first-time employee onboarding.
+Through this platform, teams of 3 participants maximum will select one of
+the proposed themes, elaborate on their ideas, write up a business plan,
+and pitch their business concepts to a panel of investors who will also be
+the jurists. We envision of encouraging a culture of innovation and
+entrepreneurship, where university students and SMEs can creatively
+address key challenges in the banking industry, such as revolutionizing
+mobile trading and investment, enhancing employee onboarding
+experiences, and driving green banking solutions.
+</p>
+<p>
+By encouraging participants to pitch their ideas in a competitive yet
+collaborative environment, we aim to nurture their potential, and inspire
+the development of solutions that contribute to global financial inclusivity,
+sustainable business practices, and cutting-edge technological
+advancements. This event will serve as a launchpad for future leaders to
+shape a more adaptive, sustainable, and customer-centric banking
+industry, ultimately driving long-term economic growth and societal well-
+being.
+		</p>
+		</div>
+       
+    </div>
+    <img src="ffc.png" alt="Large Image" style="width: 38.3%; height: auto;">
+</div>
+
+<!-- Link to your JavaScript file -->
+<script src="script.js"></script>
+</body>
+</html>
